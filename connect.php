@@ -1,7 +1,7 @@
 <?
 
 if (empty(getenv("DATABASE_URL"))){
-    $pdo = new PDO('pgsql:host=localhost;port=5432;dbname=mydb', 'postgres', '123456');
+    $pdo = new PDO('pgsql:host=localhost;port=5432;dbname=mydb', 'postgres', 'Candice');
 }  else {
   $db = parse_url(getenv("DATABASE_URL"));
   $pdo = new PDO("pgsql:" . sprintf(

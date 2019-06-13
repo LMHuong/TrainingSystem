@@ -1,8 +1,8 @@
 <?php require 'header.php'; ?>
 
 <?php
-  $sql = "SELECT username, user_password FROM users";
-  $stmt = $pdo->prepare($sql);
+  $sql = "SELECT adminusername, adminpassword FROM admin";
+  $stmt = $GLOBALS['pdo']->prepare($sql);
   //Thiết lập kiểu dữ liệu trả về
   $stmt->setFetchMode(PDO::FETCH_ASSOC);
   $stmt->execute();
@@ -13,7 +13,7 @@
     $password = $_POST['password'];
 
     foreach ($resultSet as $row) {
-      if ($username == $row['username'] && $password ==  $row['user_password']){
+      if ($username == $row['adminusername'] && $password ==  $row['adminpassword']){
         header("Location: view-product.php");
       }else{
         echo '
@@ -32,7 +32,7 @@
         <div class="col-sm-4"></div>
 
         <div class="col-sm-4">
-          <h1 class="text-center">Welcome to ATN Cloud System</h1>
+          <h1 class="text-center">Welcome</h1>
           <form class="text-center" method="post" enctype="multipart/form-data">
 
             <div class="form-group">

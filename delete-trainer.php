@@ -9,7 +9,7 @@
       $db["pass"],
       ltrim($db["path"], "/")
   ));
-  
+
   if (isset($_GET['product_id'])) {
     $product_id = $_GET['product_id'];
 
@@ -20,7 +20,7 @@
     $stmt->execute();
     $resultSet = $stmt->fetchAll();
 
-    header('Location: view-product.php');
+    header('Location: view-trainers.php');
     exit();
   }
 ?>

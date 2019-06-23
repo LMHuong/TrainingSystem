@@ -1,7 +1,7 @@
 <?php require "functions.php" ?>
 
-<!DOCTYPE php>
-<php lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -10,14 +10,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ATN Admin</title>
+    <title>FPT Training System</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- Custom CSS -->
-    <link href="css/sb-admin.css" rel="stylesheet">
+    <link href="../css/sb-admin.css" rel="stylesheet">
 </head>
 
 <body>
@@ -32,7 +32,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">ATN Cloud System</a>
+                <a class="navbar-brand" href="index.php">FPT Training System</a>
 
                 <a class="navbar-brand text-right" href="index.php">Logout</a>
             </div>
@@ -53,10 +53,10 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li>
-                        <a href="view-product.php"><i class="fa fa-fw fa-table"></i> View Products</a>
+                        <a href="view-product.php"><i class="fa fa-fw fa-table"></i> View Staff</a>
                     </li>
                     <li>
-                        <a href="add-product.php"><i class="fa fa-fw fa-wrench"></i> Add Product</a>
+                        <a href="add-product.php"><i class="fa fa-fw fa-wrench"></i> Add Staff</a>
                     </li>
                 </ul>
             </div>

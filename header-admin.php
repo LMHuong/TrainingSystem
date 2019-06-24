@@ -32,9 +32,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">FPT Training System</a>
+                <a class="navbar-brand" href="..\index.php">FPT Training System</a>
 
-                <a class="navbar-brand text-right" href="index.php">Logout</a>
+                <a class="navbar-brand text-right" href="../index.php">Logout</a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
@@ -53,10 +53,10 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li>
-                        <a href="view-product.php"><i class="fa fa-fw fa-table"></i> View Staff</a>
+                        <a href="view-staff.php"><i class="fa fa-fw fa-table"></i> View Staff</a>
                     </li>
                     <li>
-                        <a href="add-product.php"><i class="fa fa-fw fa-wrench"></i> Add Staff</a>
+                        <a href="add-staff.php"><i class="fa fa-fw fa-wrench"></i> Add Staff</a>
                     </li>
                 </ul>
             </div>

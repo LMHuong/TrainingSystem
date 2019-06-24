@@ -26,12 +26,12 @@
             $staff_username = $row['staffusername'];
             $staff_name = $row['staffname'];
             $staff_phone = $row['staffphone'];
-
+            $stringid = '"' . $staff_id . '"';
             echo "
               <tr>
                   <td>{$staff_id}</td>
                   <td>
-                    <a href='edit-staff.php?staff_id={$staff_id}'><p>{$staff_username}</p></a>
+                    <a href='edit-staff.php?staff_id=$staff_id'><p>{$staff_username}</p></a>
                   </td>
                   <td>
                     <p>{$staff_name}</p>
@@ -40,7 +40,7 @@
                     <p>{$staff_phone}</p>
                   </td>
                   <td>
-                    <a onClick='confirmation()' class='btn btn-danger validate' ><span class='glyphicon glyphicon-remove'></span></a>
+                    <a onClick='confirmation({$stringid})' class='btn btn-danger validate' ><span class='glyphicon glyphicon-remove'></span></a>
                   </td>
               </tr>
             ";
@@ -51,11 +51,13 @@
   </div>
 </div>
 <script type="text/javascript">
-  function confirmation() {
+  function confirmation(id) {
     var confirmmessage = "Are you sure to delete this product?";
     var message = "Action Was Cancelled";
     if (confirm(confirmmessage)) {
-      $(".validate").attr("href", "delete-staff.php?staff_id=<?php echo "{$staff_id}"; ?>");
+      var deleteURL = "delete-staff.php?staff_id=";
+      deleteURL += id;
+      $(".validate").attr("href", deleteURL);
     } else {
          alert(message);
     }

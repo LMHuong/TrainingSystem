@@ -7,7 +7,7 @@
       if (isset($_GET['staff_id'])) {
         $staff_id = $_GET['staff_id'];
       }
-      $sql = "SELECT * FROM staff WHERE staffid = $staff_id";
+      $sql = "SELECT * FROM staff WHERE staffid LIKE '$staff_id'";
       $stmt = $pdo->prepare($sql);
       //Thiết lập kiểu dữ liệu trả về
       $stmt->setFetchMode(PDO::FETCH_ASSOC);
@@ -15,7 +15,7 @@
       $resultSet = $stmt->fetchAll();
 
       foreach ($resultSet as $row) {
-
+      $staff_id = $row['staffid'];
       $staff_username = $row['staffusername'];
       $staff_password = $row['staffpassword'];
       $staff_name = $row['staffname'];
@@ -25,6 +25,10 @@
       <form action='' method='POST' enctype='multipart/form-data'>
         <div class='col-md-8'>
           <br>
+          <div class='form-group'>
+          <label for='user-title'>ID</label>
+            <input type='text' name='staff_id' class='form-control' value='$staff_id'>
+          </div>
           <div class='form-group'>
           <label for='user-title'>Username</label>
             <input type='text' name='staff_username' class='form-control' value='$staff_username'>

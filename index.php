@@ -53,6 +53,33 @@
     }
   }
 ?>
+
+<!--Staff-->
+<?php
+  $sql = "SELECT staffusername, staffpassword FROM staff";
+  $stmt = $GLOBALS['pdo']->prepare($sql);
+  //Thiết lập kiểu dữ liệu trả về
+  $stmt->setFetchMode(PDO::FETCH_ASSOC);
+  $stmt->execute();
+  $resultSet = $stmt->fetchAll();
+
+  if (isset($_POST['submit3'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    foreach ($resultSet as $row) {
+      if ($username == $row['staffusername'] && $password ==  $row['staffpassword']){
+        header("Location: Staff/view-category.php?username={$username}");
+      }else{
+        echo '
+          <script>
+            alert("WRONG! Wanna try again?");
+          </script>
+        ';
+      }
+    }
+  }
+?>
   <div class="container">
     <header>
       <div class="row">

@@ -32,7 +32,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.php">FPT Training System for Trainer</a>
+                <a class="navbar-brand" href="../index.php">FPT Training System for Staff</a>
 
                 <a class="navbar-brand text-right" href="../index.php">Logout</a>
             </div>
@@ -52,17 +52,42 @@
                 <ul class="nav navbar-nav side-nav">
                     <li>
                       <?php
-                        echo "<a href='../Trainer/view-topic.php?username={$username}'><i class='fa fa-fw fa-table'></i> View Topic</a>";
+                        echo "<a href='../Staff/view-category.php?username={$username}'><i class='fa fa-fw fa-table'></i> View Category</a>";
                       ?>
                     </li>
                     <li>
                       <?php
-                        echo "<a href='../Trainer/view-course.php?username={$username}'><i class='fa fa-fw fa-table'></i> View Course</a>";
+                        echo "<a href='../Staff/add-category.php?username={$username}'><i class='fa fa-fw fa-table'></i> Add Category</a>";
                       ?>
                     </li>
                     <li>
                       <?php
-                        echo "<a href='../Trainer/account-setting.php?username={$username}'><i class='fa fa-fw fa-table'></i> Account Setting</a>";
+                        echo "<a href='../Staff/view-course.php?username={$username}'><i class='fa fa-fw fa-table'></i> View Course</a>";
+                      ?>
+                    </li>
+                    <li>
+                      <?php
+                        echo "<a href='../Staff/add-course.php?username={$username}'><i class='fa fa-fw fa-table'></i> Add Course</a>";
+                      ?>
+                    </li>
+                    <li>
+                      <?php
+                        echo "<a href='../Staff/view-trainer.php?username={$username}'><i class='fa fa-fw fa-table'></i> View Trainer</a>";
+                      ?>
+                    </li>
+                    <li>
+                      <?php
+                        echo "<a href='../Staff/view-trainee.php?username={$username}'><i class='fa fa-fw fa-table'></i> View Trainee</a>";
+                      ?>
+                    </li>
+                    <li>
+                      <?php
+                        echo "<a href='../Staff/add-trainee.php?username={$username}'><i class='fa fa-fw fa-table'></i> Add Trainee</a>";
+                      ?>
+                    </li>
+                    <li>
+                      <?php
+                        echo "<a href='../Staff/account-setting.php?username={$username}'><i class='fa fa-fw fa-table'></i> Account Setting</a>";
                       ?>
                     </li>
                 </ul>

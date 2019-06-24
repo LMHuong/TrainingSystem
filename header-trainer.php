@@ -40,12 +40,10 @@
             <ul class="nav navbar-right top-nav">
               <li>
                 <?php
-                  if (isset($_GET['username'])) {
                     $username = $_GET['username'];
                     echo "
-                      <a href='#' ><i class='fa fa-user'></i>{$username}</a>
+                      <a href='#' ><i class='fa fa-user'></i> {$username}</a>
                     ";
-                  }
                 ?>
               </li>
             </ul>
@@ -53,16 +51,19 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li>
-                        <a href="../Staff/view-staff.php"><i class="fa fa-fw fa-table"></i> View Staff</a>
+                      <?php
+                        echo "<a href='../Trainer/view-topic.php?username={$username}'><i class='fa fa-fw fa-table'></i> View Topic</a>";
+                      ?>
                     </li>
                     <li>
-                        <a href="../Staff/add-staff.php"><i class="fa fa-fw fa-wrench"></i> Add Staff</a>
+                      <?php
+                        echo "<a href='../Trainer/view-course.php?username={$username}'><i class='fa fa-fw fa-table'></i> View Course</a>";
+                      ?>
                     </li>
                     <li>
-                        <a href="../Trainer/view-trainer.php"><i class="fa fa-fw fa-table"></i> View Trainer</a>
-                    </li>
-                    <li>
-                        <a href="../Trainer/add-trainer.php"><i class="fa fa-fw fa-wrench"></i> Add Trainer</a>
+                      <?php
+                        echo "<a href='../Trainer/account-setting.php?username={$username}'><i class='fa fa-fw fa-table'></i> Account Setting</a>";
+                      ?>
                     </li>
                 </ul>
             </div>

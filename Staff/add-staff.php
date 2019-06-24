@@ -1,4 +1,4 @@
-<?php require '..\header-admin.php'; ?>
+<?php include '../header-admin.php'; ?>
 
 <?php
   if (isset($_POST['submit'])) {
@@ -54,4 +54,4 @@
     <input type="submit" name="submit" class="btn btn-primary btn-lg">
   </div>
 </form>
-<?php require '..\footer-admin.php' ?>
+<?php require '../footer-admin.php' ?>

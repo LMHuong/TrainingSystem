@@ -53,10 +53,16 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li>
-                        <a href="view-staff.php"><i class="fa fa-fw fa-table"></i> View Staff</a>
+                        <a href="../Staff/view-staff.php"><i class="fa fa-fw fa-table"></i> View Staff</a>
                     </li>
                     <li>
-                        <a href="add-staff.php"><i class="fa fa-fw fa-wrench"></i> Add Staff</a>
+                        <a href="../Staff/add-staff.php"><i class="fa fa-fw fa-wrench"></i> Add Staff</a>
+                    </li>
+                    <li>
+                        <a href="../Trainer/view-trainer.php"><i class="fa fa-fw fa-table"></i> View Trainer</a>
+                    </li>
+                    <li>
+                        <a href="../Trainer/add-trainer.php"><i class="fa fa-fw fa-wrench"></i> Add Trainer</a>
                     </li>
                 </ul>
             </div>

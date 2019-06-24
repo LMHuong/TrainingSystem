@@ -55,6 +55,7 @@
       }
 
       if (isset($_POST['update'])) {
+        $staff_id = $_POST['staff_id'];
         $staff_username = $_POST['staff_username'];
         $staff_password = $_POST['staff_password'];
         $staff_name = $_POST['staff_name'];
@@ -70,7 +71,7 @@
 
         $sql = "UPDATE staff
                 SET staffid = :id, staffusername = :username, staffpassword = :password, staffname = :name, staffphone = :phone
-                WHERE staffid = $staff_id";
+                WHERE staffid LIKE '$staff_id'";
 
         $stmt = $pdo->prepare($sql);
         $stmt->execute($data);

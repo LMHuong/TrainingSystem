@@ -6,9 +6,13 @@
         <thead>
           <tr>
             <th>ID</th>
-            <th>Name</th>
             <th>Username</th>
+            <th>Name</th>
             <th>Phone Number</th>
+            <th>Email</th>
+            <th>Educational Background</th>
+            <th>Working Place</th>
+            <th>Employment Type</th>
             <th>Delete</th>
           </tr>
         </thead>
@@ -29,13 +33,14 @@
             $trainer_email = $row['traineremail'];
             $trainer_educationalbg = $row['trainereducationalbg'];
             $trainer_workingplace = $row['trainerworkingplace'];
-            $trainer_employmenttypeid = $row['employmenttypeid'];
+            $trainer_employmenttype = $row['employmenttype'];
 
+            $stringid = '"' . $trainer_id . '"';
             echo "
               <tr>
                   <td>{$trainer_id}</td>
                   <td>
-                    <a href='edit-trainer.php?trainer_id={$trainer_id}'><p>{$trainer_username}</p></a>
+                    <a href='edit-trainer.php?trainer_id=$trainer_id'><p>{$trainer_username}</p></a>
                   </td>
                   <td>
                     <p>{$trainer_name}</p>
@@ -44,7 +49,19 @@
                     <p>{$trainer_phone}</p>
                   </td>
                   <td>
-                    <a onClick='confirmation()' class='btn btn-danger validate' ><span class='glyphicon glyphicon-remove'></span></a>
+                    <p>{$trainer_email}</p>
+                  </td>
+                  <td>
+                    <p>{$trainer_educationalbg}</p>
+                  </td>
+                  <td>
+                    <p>{$trainer_workingplace}</p>
+                  </td>
+                  <td>
+                    <p>{$trainer_employmenttype}</p>
+                  </td>
+                  <td>
+                    <a onClick='confirmation({$stringid})' class='btn btn-danger validate' ><span class='glyphicon glyphicon-remove'></span></a>
                   </td>
               </tr>
             ";

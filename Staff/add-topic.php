@@ -42,6 +42,17 @@
     $sql = "INSERT INTO topic(topicid, topicname, topicdesc, courseid, trainerid) VALUES (:id, :topicname, :topicdesc, :courseid, :trainerid)";
     $stmt = $pdo->prepare($sql);
     $stmt->execute($data);
+    
+    $topic_course_id = $topic_id . $course_id . $trainer_id;
+    $data1 = [
+        'id' => $topic_course_id,
+        'topicid' => $topic_id,
+        'courseid' => $course_id,
+        'trainerid' => $trainer_id,
+    ];
+    $sql10 = "INSERT INTO topiccourse(id, topicid, courseid, trainerid) VALUES (:id, :topicid, :courseid, :trainerid)";
+    $stmt = $pdo->prepare($sql10);
+    $stmt->execute($data);
 
     header("Location: view-topic.php?username={$username}");
     exit();

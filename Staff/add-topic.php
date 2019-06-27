@@ -91,15 +91,15 @@
       <label for='user-title'>Trainer</label>
       <select name='trainer_name' id='' class='form-control'>
         <?php
-          $sql = "SELECT * FROM trainer";
+          $sql2 = "SELECT * FROM trainer";
 
-          $stmt = $GLOBALS['pdo']->prepare($sql);
+          $stmt = $GLOBALS['pdo']->prepare($sql2);
           //Thiết lập kiểu dữ liệu trả về
           $stmt->setFetchMode(PDO::FETCH_ASSOC);
           $stmt->execute();
-          $resultSet = $stmt->fetchAll();
+          $resultSet3 = $stmt->fetchAll();
 
-          foreach ($resultSet as $row) {
+          foreach ($resultSet3 as $row) {
             $trainer_name = $row['trainername'];
 
             echo "

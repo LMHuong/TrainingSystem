@@ -18,6 +18,9 @@
         </thead>
         <tbody>
           <?php
+          if (isset($_GET['username'])) {
+            $username = $_GET['username'];
+          }
           $sql = "SELECT * FROM trainer";
           $stmt = $GLOBALS['pdo']->prepare($sql);
           //Thiết lập kiểu dữ liệu trả về

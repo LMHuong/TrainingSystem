@@ -52,7 +52,7 @@
         'courseid' => $course_id,
         'trainerid' => $trainer_id,
     ];
-    $sql10 = "INSERT INTO topiccourse(id, topicid, courseid, trainerid) VALUES (:id, :topicid, :courseid, :trainerid)";
+    $sql10 = "INSERT INTO topiccourse(topiccourseid, topicid, courseid, trainerid) VALUES (:id, :topicid, :courseid, :trainerid)";
     $stmt = $pdo->prepare($sql10);
     $stmt->execute($data);
 

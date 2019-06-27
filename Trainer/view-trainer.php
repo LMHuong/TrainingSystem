@@ -1,3 +1,8 @@
+<?php
+          if (isset($_GET['username'])) {
+            $username = $_GET['username'];
+          }
+?>
 <?php include '../header-admin.php'; ?>
 
 <div class="container-fluid">
@@ -18,9 +23,6 @@
         </thead>
         <tbody>
           <?php
-          if (isset($_GET['username'])) {
-            $username = $_GET['username'];
-          }
           $sql = "SELECT * FROM trainer";
           $stmt = $GLOBALS['pdo']->prepare($sql);
           //Thiết lập kiểu dữ liệu trả về

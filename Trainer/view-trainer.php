@@ -13,11 +13,6 @@
             <th>ID</th>
             <th>Username</th>
             <th>Name</th>
-            <th>Phone Number</th>
-            <th>Email</th>
-            <th>Educational Background</th>
-            <th>Working Place</th>
-            <th>Employment Type</th>
             <th>Delete</th>
           </tr>
         </thead>
@@ -33,12 +28,6 @@
           foreach ($resultSet as $row) {
             $trainer_id = $row['trainerid'];
             $trainer_username = $row['trainerusername'];
-            $trainer_name = $row['trainername'];
-            $trainer_phone = $row['trainerphone'];
-            $trainer_email = $row['traineremail'];
-            $trainer_educationalbg = $row['trainereducationalbg'];
-            $trainer_workingplace = $row['trainerworkingplace'];
-            $trainer_employmenttype = $row['employmenttype'];
 
             $stringid = '"' . $trainer_id . '"';
             echo "

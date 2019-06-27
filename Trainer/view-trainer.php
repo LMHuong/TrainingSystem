@@ -46,25 +46,7 @@
                   <td>{$trainer_id}</td>
                   <td>
                     <a href='edit-trainer.php?trainer_id=$trainer_id'><p>{$trainer_username}</p></a>
-                  </td>
-                  <td>
-                    <p>{$trainer_name}</p>
-                  </td>
-                  <td>
-                    <p>{$trainer_phone}</p>
-                  </td>
-                  <td>
-                    <p>{$trainer_email}</p>
-                  </td>
-                  <td>
-                    <p>{$trainer_educationalbg}</p>
-                  </td>
-                  <td>
-                    <p>{$trainer_workingplace}</p>
-                  </td>
-                  <td>
-                    <p>{$trainer_employmenttype}</p>
-                  </td>
+                  </td>>
                   <td>
                     <a onClick='confirmation({$stringid})' class='btn btn-danger validate' ><span class='glyphicon glyphicon-remove'></span></a>
                   </td>

@@ -46,7 +46,7 @@
               $course_name = $row['coursename'];
             }
 
-            $sql2 = "SELECT coursename FROM course WHERE courseid LIKE '$trainer_id'";
+            $sql2 = "SELECT trainername FROM trainer WHERE trainerid LIKE '$trainer_id'";
 
             $stmt = $GLOBALS['pdo']->prepare($sql2);
             //Thiết lập kiểu dữ liệu trả về

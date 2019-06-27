@@ -38,7 +38,7 @@
         'topicname' => $topic_name,
         'topicdesc' => $topic_description,
         'courseid' => $course_id,
-        'topicdesc' => $trainer_id,
+        'trainerid' => $trainer_id,
     ];
 
     $sql = "INSERT INTO topic(topicid, topicname, topicdesc, courseid, trainerid) VALUES (:id, :topicname, :topicdesc, :courseid, :trainerid)";

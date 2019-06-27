@@ -22,7 +22,7 @@
       $course_id = $row['courseid'];
     }
 
-    $sql2 = "SELECT trainerid FROM trainer WHERE trainername LIKE '$trainer_name'";
+    $sql2 = "SELECT trainerid FROM trainer WHERE trainerusername LIKE '$trainer_name'";
     $stmt = $GLOBALS['pdo']->prepare($sql2);
     //Thiết lập kiểu dữ liệu trả về
     $stmt->setFetchMode(PDO::FETCH_ASSOC);

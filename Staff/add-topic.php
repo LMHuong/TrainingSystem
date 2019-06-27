@@ -20,8 +20,8 @@
       $course_id = $row['courseid'];
     }
 
-    $sql1 = "SELECT trainerid FROM trainer WHERE trainername LIKE '$trainer_name'";
-    $stmt = $GLOBALS['pdo']->prepare($sql1);
+    $sql2 = "SELECT trainerid FROM trainer WHERE trainername LIKE '$trainer_name'";
+    $stmt = $GLOBALS['pdo']->prepare($sql2);
     //Thiết lập kiểu dữ liệu trả về
     $stmt->setFetchMode(PDO::FETCH_ASSOC);
     $stmt->execute();

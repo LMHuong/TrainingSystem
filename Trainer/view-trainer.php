@@ -12,7 +12,6 @@
           <tr>
             <th>ID</th>
             <th>Username</th>
-            <th>Name</th>
             <th>Delete</th>
           </tr>
         </thead>
@@ -35,7 +34,7 @@
                   <td>{$trainer_id}</td>
                   <td>
                     <a href='edit-trainer.php?trainer_id=$trainer_id'><p>{$trainer_username}</p></a>
-                  </td>>
+                  </td>
                   <td>
                     <a onClick='confirmation({$stringid})' class='btn btn-danger validate' ><span class='glyphicon glyphicon-remove'></span></a>
                   </td>

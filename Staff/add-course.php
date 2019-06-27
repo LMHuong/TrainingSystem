@@ -1,4 +1,4 @@
-<?php require '..\header-staff.php'; ?>
+<?php require '../header-staff.php'; ?>
 
 <?php
   if (isset($_GET['username'])) {
@@ -82,4 +82,4 @@
     <input type="submit" name="submit" class="btn btn-primary btn-lg">
   </div>
 </form>
-<?php require '..\footer-admin.php' ?>
+<?php require '../footer-admin.php' ?>

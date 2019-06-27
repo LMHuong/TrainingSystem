@@ -1,4 +1,4 @@
-<?php require '..\header-trainer.php'; ?>
+<?php require '../header-trainer.php'; ?>
 
 <form action="" method="POST" enctype="multipart/form-data">
   <div class="col-md-8">
@@ -96,4 +96,4 @@
     ?>
   </div>
 </form>
-<?php require '..\footer-admin.php'; ?>
+<?php require '../footer-admin.php'; ?>

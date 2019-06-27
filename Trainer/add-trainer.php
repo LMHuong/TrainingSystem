@@ -1,6 +1,9 @@
 <?php require '../header-admin.php'; ?>
 
 <?php
+if (isset($_GET['username'])) {
+            $username = $_GET['username'];
+          }
   if (isset($_POST['submit'])) {
     $trainer_id = $_POST['trainer_id'];
     $trainer_username = $_POST['trainer_username'];

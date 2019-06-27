@@ -112,7 +112,7 @@
           $resultSet1 = $stmt->fetchAll();
 
           foreach ($resultSet1 as $row) {
-            $trainer_name = $row['trainername'];
+            $trainer_name = $row['trainerusername'];
 
             echo "
               <option value='{$trainer_name}'>{$trainer_name}</option>

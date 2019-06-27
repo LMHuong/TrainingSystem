@@ -76,7 +76,7 @@
     var confirmmessage = "Are you sure to delete this profile?";
     var message = "Action Was Cancelled";
     if (confirm(confirmmessage)) {
-      $(".validate").attr("href", "delete-trainer.php?trainer_id=<?php echo "{$trainer_id}"; ?>");
+      $(".validate").attr("href", "delete-trainer.php?trainer_id=123");
     } else {
          alert(message);
     }

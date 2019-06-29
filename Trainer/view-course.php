@@ -13,7 +13,7 @@
           if (isset($_GET['username'])) {
             $username = $_GET['username'];
           }
-          $sql = "SELECT course.coursename
+          $sql = "SELECT DISTINCT course.coursename
           FROM (topiccourse INNER JOIN course ON course.courseid LIKE topiccourse.courseid)
           WHERE topiccourse.trainerid LIKE (SELECT trainerid FROM trainer WHERE trainerusername LIKE '$username')";
 

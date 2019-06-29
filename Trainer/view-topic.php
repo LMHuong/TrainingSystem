@@ -17,7 +17,7 @@
           $sql = "SELECT topic.topicname, course.coursename
           FROM ((topiccourse INNER JOIN topic ON topic.topicid LIKE topiccourse.topicid)
           INNER JOIN course ON course.courseid LIKE topiccourse.courseid)
-          WHERE topiccourse.trainerid LIKE (SELECT trainerid FROM trainer WHERE trainername LIKE '$username')";
+          WHERE topiccourse.trainerid LIKE (SELECT trainer.trainerid FROM trainer WHERE trainerusername LIKE '$username')";
 
           $stmt = $GLOBALS['pdo']->prepare($sql);
           //Thiết lập kiểu dữ liệu trả về

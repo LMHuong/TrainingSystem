@@ -27,6 +27,7 @@
           $stmt->setFetchMode(PDO::FETCH_ASSOC);
           $stmt->execute();
           $resultSet = $stmt->fetchAll();
+          print_r($resultSet);
           foreach ($resultSet as $row) {
             $trainer_id = $row['trainerid'];
             $trainer_username = $row['trainerusername'];

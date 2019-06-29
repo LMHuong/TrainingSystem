@@ -75,16 +75,16 @@
                         echo "<a href='../Staff/view-trainer.php?username={$username}'><i class='fa fa-fw fa-table'></i> View Trainer</a>";
                       ?>
                     </li>
-                    <li>
+                    <!-- <li>
                       <?php
-                        echo "<a href='../Staff/view-trainee.php?username={$username}'><i class='fa fa-fw fa-table'></i> View Trainee</a>";
+                        // echo "<a href='../Staff/view-trainee.php?username={$username}'><i class='fa fa-fw fa-table'></i> View Trainee</a>";
                       ?>
                     </li>
                     <li>
                       <?php
-                        echo "<a href='../Staff/add-trainee.php?username={$username}'><i class='fa fa-fw fa-table'></i> Add Trainee</a>";
+                        // echo "<a href='../Staff/add-trainee.php?username={$username}'><i class='fa fa-fw fa-table'></i> Add Trainee</a>";
                       ?>
-                    </li>
+                    </li> -->
                     <li>
                       <?php
                         echo "<a href='../Staff/add-topic.php?username={$username}'><i class='fa fa-fw fa-table'></i> Add Topic</a>";

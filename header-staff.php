@@ -95,11 +95,6 @@
                         echo "<a href='../Staff/view-topic.php?username={$username}'><i class='fa fa-fw fa-table'></i> View Topic</a>";
                       ?>
                     </li>
-                    <li>
-                      <?php
-                        echo "<a href='../Staff/account-setting.php?username={$username}'><i class='fa fa-fw fa-table'></i> Account Setting</a>";
-                      ?>
-                    </li>
                 </ul>
             </div>
         </nav>
